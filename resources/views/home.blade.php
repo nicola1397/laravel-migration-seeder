@@ -27,7 +27,7 @@
     <tr>
       <th scope="row">{{ $train->id }}</th>
       <td>{{ $train->company }}</td>
-      <td>{{ $train->ceparture_from }}</td>
+      <td>{{ $train->departure_from }}</td>
       <td>{{ $train->arrival_in }}</td>
       <td>{{ $train->time_of_departure }}</td>
       <td>{{ $train->time_of_arrival }}</td>
