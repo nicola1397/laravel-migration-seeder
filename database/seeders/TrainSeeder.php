@@ -21,9 +21,9 @@ class TrainSeeder extends Seeder
         $file = fopen(__DIR__ . "/../csv/train.csv", "r");
         $first_line = true;
         while (!feof($file)) {
+            $train_data = fgetcsv($file);
             if (!$first_line) {
-                $train_data = fgetcsv($file);
-                $train = new Train;
+                $train = new Trains;
                 $train->company = $train_data[0];
                 $train->departure_from = $train_data[1];
                 $train->arrival_in = $train_data[2];
